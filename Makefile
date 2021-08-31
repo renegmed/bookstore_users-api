@@ -1,6 +1,12 @@
 init-project:
 	go mod init bookstore_users-api
 
+up: 
+	docker-compose up -d 
+
+down:
+	docker-compose down 
+
 build:
 	docker build -t bookstore-users-api . 
 
